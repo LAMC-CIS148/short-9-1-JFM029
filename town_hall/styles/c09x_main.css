@@ -203,9 +203,9 @@ footer p {
     }
     header h2, header h3 { flex-basis: 100%; }
     main { flex-direction: column; }
-	section {
-	    order: 1;
-		width: 95%;
+	section, #left, #right {
+		width: 100%;
+		padding-right: 2.5%;
 	}
 	aside {
 	    order: 2;
@@ -213,8 +213,9 @@ footer p {
 		width: 95%;
 	}
 	article img { max-width: 30%; }
-	#speakers {
+	#left #speakers {
 		column-count: 2;
+		column-gap: 1em;
 	}
 	#nav_menu {
 		display: none;
